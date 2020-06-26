@@ -238,13 +238,3 @@ cnoremap <C-e> <End>
 let g:NERDTreeMapOpenSplit = 's'
 let g:NERDTreeMapOpenVSplit = 'v'
 
-
-" Specify a directory for plugins
-" - For Neovim: ~/.local/share/nvim/plugged
- " - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.vim/plugged')
-
-Plug 'scrooloose/nerdtree'
-
-" Initialize plugin system
-call plug#end()
