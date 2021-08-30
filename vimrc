@@ -278,8 +278,8 @@ autocmd BufNewFile *.py,*.cc,*.sh,*.java exec ":call SetTitle()"
 func SetTitle()
     if expand ("%:e") == 'sh'
         call setline(1, "#!/bin/bash")
-        call setline(2, "#Author:guohuliu")
-        call setline(3, "#Time:".strftime("%F %T"))
-        call setline(4, "#Name:".expand("%"))
+        call setline(2, "# Author: guohuliu")
+        call setline(3, "# Time: ".strftime("%F %T"))
+        call setline(4, "# Name: ".expand("%"))
     endif
 endfunc
